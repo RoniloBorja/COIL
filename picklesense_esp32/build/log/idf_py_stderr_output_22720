@@ -1,0 +1,214 @@
+Command: C:\Espressif\tools\python\v6.0.1\venv\Scripts\python.exe C:\esp\v6.0.1\esp-idf\tools/idf_monitor.py -p COM12 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\Users\user\Desktop\picklesense_esp32\build\picklesense_esp32.elf C:\Users\user\Desktop\picklesense_esp32\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\tools\python\v6.0.1\venv\Scripts\python.exe' 'C:\esp\v6.0.1\esp-idf\tools\idf.py' '-p' 'COM12'
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM12 instead...[0m
+[0;33m--- esp-idf-monitor 1.9.0 on \\.\COM12 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x400db55e: [0;33mapp_main[0m[0m at [0;32mC:/Users/user/Desktop/picklesense_esp32/main/main.c[0m[0m:[1;31m42[0m
+[0m--- 0x40089aa7: [0;33m_esp_error_check_failed[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0m--- 0x40089b4d: [0;33mpanic_abort[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m464[0m
+[0m--- 0x40089b15: [0;33mesp_system_abort[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x40089739: [0;33mabort[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/esp_libc/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x40089aa7: [0;33m_esp_error_check_failed[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0m--- 0x400db55e: [0;33mapp_main[0m[0m at [0;32mC:/Users/user/Desktop/picklesense_esp32/main/main.c[0m[0m:[1;31m42[0m
+[0m--- 0x400d57e6: [0;33mmain_task[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/freertos/app_startup.c[0m[0m:[1;31m199[0m
+[0m--- 0x40156d5a: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m143[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x40080400: [0;33m_invalid_pc_placeholder[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m2227[0m
+[0m--- 0x40080644: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/esp/v6.0.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[1;31m--- Error: ClearCommError failed (PermissionError(13, 'Access is denied.', None, 5))[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[0m
+Traceback (most recent call last):
+  File "C:\esp\v6.0.1\esp-idf\tools/idf_monitor.py", line 11, in <module>
+    sys.exit(subprocess.run([sys.executable, '-m', 'esp_idf_monitor'] + sys.argv[1:]).returncode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 550, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1201, in communicate
+    self.wait()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1264, in wait
+    return self._wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1590, in _wait
+    result = _winapi.WaitForSingleObject(self._handle,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

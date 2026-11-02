@@ -1,0 +1,852 @@
+Command: C:\Espressif\tools\python\v6.0.1\venv\Scripts\python.exe C:\esp\v6.0.1\esp-idf\tools/idf_monitor.py -p COM12 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\Users\user\Desktop\picklesense_esp32\build\picklesense_esp32.elf C:\Users\user\Desktop\picklesense_esp32\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\tools\python\v6.0.1\venv\Scripts\python.exe' 'C:\esp\v6.0.1\esp-idf\tools\idf.py' '-p' 'COM12'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0040,len:6272
+load:0x40078000,len:15848
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v6.0.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Nov  2 2026 19:14:44[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v3.1[0m
+[0;32mI (32) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (35) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1c668h (116328) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=0002c690 vaddr=3ffb0000 size=03988h ( 14728) load[0m
+[0;32mI (134) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=8aff4h (569332) map[0m
+[0;32mI (337) esp_image: segment 3: paddr=000bb01c vaddr=3ffb3988 size=00bd0h (  3024) load[0m
+[0;32mI (338) esp_image: segment 4: paddr=000bbbf4 vaddr=40080000 size=159d4h ( 88532) load[0m
+[0;32mI (377) esp_image: segment 5: paddr=000d15d0 vaddr=50000000 size=00028h (    40) load[0m
+[0;32mI (388) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (388) boot: Disabling RNG early entropy source...[0m
+[0;32mI (398) cpu_start: Multicore app[0m
+[0;32mI (407) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (407) cpu_start: Pro cpu start user code[0m
+[0;32mI (407) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (409) app_init: Application information:[0m
+[0;32mI (413) app_init: Project name:     picklesense_esp32[0m
+[0;32mI (417) app_init: App version:      1[0m
+[0;32mI (421) app_init: Compile time:     Nov  2 2026 19:12:03[0m
+[0;32mI (426) app_init: ELF file SHA256:  b430dff4f...[0m
+[0;32mI (430) app_init: ESP-IDF:          v6.0.1[0m
+[0;32mI (434) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (438) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (442) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (446) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (452) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (457) heap_init: At 3FFB89F0 len 00027610 (157 KiB): DRAM[0m
+[0;32mI (462) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (468) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (473) heap_init: At 400959D4 len 0000A62C (41 KiB): IRAM[0m
+[0;33mW (480) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (492) spi_flash: detected chip: generic[0m
+[0;32mI (495) spi_flash: flash io: dio[0m
+[0;33mW (498) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (512) main_task: Started on CPU0[0m
+[0;32mI (522) main_task: Calling app_main()[0m
+[0;32mI (522) PICKLESENSE: Starting PickleSense[0m
+[0;32mI (522) PICKLESENSE: Initializing MPU6050...[0m
+[0;32mI (522) MPU6050: Initializing I2C[0m
+[0;32mI (522) MPU6050: Checking MPU6050 at address 0x68[0m
+[0;32mI (532) MPU6050: WHO_AM_I = 0x68[0m
+[0;32mI (642) MPU6050: ACCEL_CONFIG = 0x00[0m
+[0;32mI (642) MPU6050: MPU6050 initialized successfully[0m
+[0;32mI (642) PICKLESENSE: Connecting to Wi-Fi...[0m
+[0;32mI (682) wifi:wifi driver task: 3ffc0a0c, prio:23, stack:6656, core=0[0m
+[0;32mI (702) wifi:wifi firmware version: b37c951[0m
+[0;32mI (702) wifi:wifi certification version: v7.0[0m
+[0;32mI (702) wifi:config NVS flash: enabled[0m
+[0;32mI (702) wifi:config nano formatting: disabled[0m
+[0;32mI (702) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (712) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (712) wifi:Init management short buffer num: 32[0m
+[0;32mI (712) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (722) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (722) wifi:Init static rx buffer num: 10[0m
+[0;32mI (732) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (732) wifi_init: rx ba win: 6[0m
+[0;32mI (732) wifi_init: accept mbox: 6[0m
+[0;32mI (742) wifi_init: tcpip mbox: 32[0m
+[0;32mI (742) wifi_init: udp mbox: 6[0m
+[0;32mI (742) wifi_init: tcp mbox: 6[0m
+[0;32mI (742) wifi_init: tcp tx win: 5760[0m
+[0;32mI (752) wifi_init: tcp rx win: 5760[0m
+[0;32mI (752) wifi_init: tcp mss: 1440[0m
+[0;32mI (752) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (762) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (762) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (842) wifi:mode : sta (68:09:47:9f:26:f0)[0m
+[0;32mI (842) wifi:enable tsf[0m
+[0;32mI (852) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (852) WIFI_MANAGER: Wi-Fi power saving disabled[0m
+[0;32mI (852) WIFI_MANAGER: Connecting to SSID: PisoWifi[0m
+[0;32mI (852) WIFI_MANAGER: Wi-Fi station started[0m
+[0;32mI (862) wifi:new:<6,2>, old:<1,0>, ap:<255,255>, sta:<6,2>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (872) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (932) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (942) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (952) wifi:<ba-add>idx:0 (ifx:0, 84:06:fa:ea:1e:e0), tid:0, ssn:0, winSize:64[0m
+[0;32mI (962) wifi:connected with PisoWifi, aid = 6, channel 6, 40D, bssid = 84:06:fa:ea:1e:e0[0m
+[0;32mI (962) wifi:security: WPA2-PSK, phy: bgn, rssi: -84, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (972) wifi:pm start, type: 0[0m
+
+[0;32mI (972) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1022) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (2012) esp_netif_handlers: sta ip: 192.168.1.16, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (2012) WIFI_MANAGER: Wi-Fi connected[0m
+[0;32mI (2012) WIFI_MANAGER: ESP32 IP address: 192.168.1.16[0m
+[0;32mI (2012) WIFI_MANAGER: Network connection ready[0m
+[0;32mI (2022) PICKLESENSE: Initializing UDP sender...[0m
+[0;32mI (2022) UDP_SENDER: UDP sender initialized[0m
+[0;32mI (2022) UDP_SENDER: Destination: 192.168.1.10:5005[0m
+[0;32mI (2032) PICKLESENSE: IMU acquisition task started at 100 Hz[0m
+[0;32mI (2032) PICKLESENSE: UDP sender task started[0m
+[0;32mI (2042) PICKLESENSE: PickleSense tasks started[0m
+[0;32mI (2042) main_task: Returned from app_main()[0m
+[0;33mW (2062) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (2072) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (2082) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (2092) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (2102) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (2112) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (2122) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (2132) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (2142) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (2152) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;32mI (7042) PICKLESENSE: STATUS | queue=0 | queue_drops=0 | udp_failures=10[0m
+[0;33mW (8202) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8212) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8222) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8232) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8242) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8252) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8262) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8272) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8282) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8292) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8302) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8312) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8322) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8332) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8342) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8352) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8362) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8372) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8382) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8392) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8402) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8412) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8422) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8432) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8442) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8452) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8462) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8472) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8482) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8492) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8502) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8512) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8522) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8532) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8542) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8552) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8562) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8572) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8582) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8592) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8602) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8612) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8622) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8632) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8642) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8652) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8662) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8672) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8782) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8792) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8802) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8812) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8822) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8832) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8842) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8852) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8862) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8872) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8882) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8892) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8902) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8912) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8922) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8932) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8942) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8952) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8962) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8972) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8982) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (8992) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9002) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9012) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9022) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9032) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9042) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9052) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9062) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9072) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9082) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9092) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9102) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9112) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9122) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9132) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9142) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9152) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9162) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9172) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9192) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9202) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9212) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9222) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9232) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9242) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9252) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9262) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9272) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9292) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9302) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9312) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9322) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9332) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9342) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9352) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9362) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9372) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9382) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9392) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9402) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9412) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9422) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9432) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9442) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9452) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9462) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9472) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9482) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9492) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9502) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9512) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9522) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9532) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9542) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9552) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9562) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9572) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9582) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9592) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9602) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9612) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9622) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9632) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9642) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9652) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9662) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9672) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9732) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9742) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9752) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9762) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9772) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9782) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9792) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9802) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9812) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9822) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9832) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9842) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9852) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9862) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9872) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9882) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9892) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9902) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9952) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9962) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9972) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9982) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (9992) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10452) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10462) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10472) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10482) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10492) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10502) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10512) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10522) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10532) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10542) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10552) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10562) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10572) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10582) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10592) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10602) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10612) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10622) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10632) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10642) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10652) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10662) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10672) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10682) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10692) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10702) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10712) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10722) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10732) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10742) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10752) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10762) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10772) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10782) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10792) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10802) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10822) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10832) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10842) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10852) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10862) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10872) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10882) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10892) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10902) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10912) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10922) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10932) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10942) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10952) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10962) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10972) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10982) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (10992) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11002) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11012) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11022) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11032) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11042) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11052) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11062) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11082) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11092) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11102) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11232) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11242) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11252) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11262) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11272) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11282) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11292) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11302) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11312) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11322) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11332) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11342) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11352) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11362) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11372) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11382) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11392) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11402) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11412) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11422) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11432) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11442) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11452) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11462) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11472) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11482) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11492) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11502) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11512) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11522) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11532) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11542) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11552) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11562) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11572) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11582) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11592) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11602) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11612) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11622) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11632) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11642) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11652) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11672) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11682) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11692) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11702) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11712) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11722) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11732) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11742) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11752) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11762) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11772) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11782) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11792) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11802) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11812) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11822) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11832) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11842) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11852) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11862) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11872) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11882) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11892) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11902) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11912) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11922) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11932) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11942) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11952) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11962) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11972) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11982) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (11992) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12002) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12012) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12022) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12032) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;32mI (12042) PICKLESENSE: STATUS | queue=0 | queue_drops=0 | udp_failures=313[0m
+[0;33mW (12042) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12052) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12062) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12072) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12082) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12092) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12102) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12112) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12122) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12132) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12142) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12152) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12162) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12172) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12192) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12202) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12212) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12232) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12242) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12252) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12262) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12272) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12282) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12292) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12302) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12312) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12322) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12342) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12352) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12362) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12372) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12382) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12392) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12402) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12412) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12422) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12462) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12472) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12492) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12502) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12512) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12522) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12532) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12542) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12552) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12562) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12572) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12582) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12592) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12602) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12612) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12622) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12632) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12642) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12652) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12662) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12672) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12682) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12692) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12702) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12712) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12732) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12742) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12752) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12762) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12772) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12782) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12792) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12802) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12812) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12822) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12862) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12872) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12882) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12892) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12902) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12912) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (12962) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13022) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13032) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13042) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13052) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13062) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13072) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13082) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13092) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13102) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13112) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13122) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13132) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13142) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13152) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13162) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13172) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13182) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13192) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13202) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13212) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13222) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13232) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13242) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13252) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13262) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13272) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13282) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13292) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13302) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13312) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13322) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13332) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13342) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13352) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13362) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13372) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13382) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13392) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13402) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13412) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13422) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13432) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13442) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13452) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13462) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13472) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13482) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13492) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13502) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13512) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13532) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13542) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13552) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13562) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13572) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13582) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13592) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13602) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13612) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13622) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13632) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13642) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13652) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13662) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13672) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13682) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13692) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13702) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13712) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13722) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13732) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13742) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13752) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13762) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13772) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13782) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13792) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13802) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13812) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13822) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13832) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13842) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13852) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13862) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13872) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13882) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13892) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13902) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13912) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13932) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13942) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13952) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13962) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13972) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13982) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (13992) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14002) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14012) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14022) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14032) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14042) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14052) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14062) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14072) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14082) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14092) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14102) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14112) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14122) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14132) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14142) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14152) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14162) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14172) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14182) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14192) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14202) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14212) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14222) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14232) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14242) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14252) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14262) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14272) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14282) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14292) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14302) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14312) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14322) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14332) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14342) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14352) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14362) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14372) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14382) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14392) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14402) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14412) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14422) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14432) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14452) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14462) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14472) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14482) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14492) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14502) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14512) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14522) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14532) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14542) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14552) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14562) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14572) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14582) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14592) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14602) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14612) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14622) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14632) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14642) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14652) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14662) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14672) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14682) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14692) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14702) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14712) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14722) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14742) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14752) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14762) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14772) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14782) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14792) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14802) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14812) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14822) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14832) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14842) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14852) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14862) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14872) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14882) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14892) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14902) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14912) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14922) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14932) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14942) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14952) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14962) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14972) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14982) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (14992) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15002) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15012) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15022) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15032) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15042) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15052) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15062) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15072) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15082) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15092) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15102) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15112) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15122) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15132) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15142) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15152) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15162) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15172) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15182) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15192) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15202) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15212) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15222) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15232) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15242) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15262) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15272) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15282) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15292) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15302) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15312) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15352) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15362) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15372) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15382) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15392) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15402) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15412) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15422) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15432) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15442) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15452) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15462) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15472) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15482) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15492) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15502) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15512) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15522) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15532) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15542) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15552) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15582) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15592) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15602) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15612) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15622) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15632) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15642) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15652) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15662) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15672) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15682) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15692) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15702) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15712) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15722) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15732) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15742) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15752) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15762) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15772) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15782) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15792) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15802) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15812) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15822) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15832) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15842) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15852) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15862) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15872) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15882) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15892) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15902) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15912) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15922) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15932) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15942) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15952) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15962) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15972) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15982) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (15992) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16002) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16012) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16022) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16032) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16042) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16052) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16062) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16072) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16082) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16102) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16112) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16122) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16132) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16142) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16152) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16162) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16172) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16182) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16192) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16202) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16212) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16222) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16232) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16252) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16262) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16272) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16282) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16292) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16312) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16322) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16332) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16342) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16352) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16362) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16372) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16382) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16392) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16402) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16412) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16422) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16432) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16442) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16452) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16462) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16472) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16482) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16492) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;33mW (16502) UDP_SENDER: UDP send failed: errno=12 (Not enough space)[0m
+[0;32mI (17042) PICKLESENSE: STATUS | queue=0 | queue_drops=0 | udp_failures=727[0m
+[0;32mI (22042) PICKLESENSE: STATUS | queue=0 | queue_drops=0 | udp_failures=727[0m
+[0;32mI (27042) PICKLESENSE: STATUS | queue=0 | queue_drops=0 | udp_failures=727[0m
+[0;32mI (32042) PICKLESENSE: STATUS | queue=0 | queue_drops=0 | udp_failures=727[0m
+[0;32mI (37042) PICKLESENSE: STATUS | queue=0 | queue_drops=0 | udp_failures=727[0m

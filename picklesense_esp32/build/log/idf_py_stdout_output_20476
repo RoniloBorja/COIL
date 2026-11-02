@@ -1,0 +1,192 @@
+Command: C:\Espressif\tools\python\v6.0.1\venv\Scripts\python.exe C:\esp\v6.0.1\esp-idf\tools/idf_monitor.py -p COM12 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\Users\user\Desktop\picklesense_esp32\build\picklesense_esp32.elf C:\Users\user\Desktop\picklesense_esp32\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\tools\python\v6.0.1\venv\Scripts\python.exe' 'C:\esp\v6.0.1\esp-idf\tools\idf.py' '-p' 'COM12'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0040,len:6272
+load:0x40078000,len:15848
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF v6.0.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Nov  2 2026 19:14:44[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v3.1[0m
+[0;32mI (32) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (35) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1babch (113340) map[0m
+[0;32mI (127) esp_image: segment 1: paddr=0002bae4 vaddr=3ffb0000 size=04534h ( 17716) load[0m
+[0;32mI (134) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=8a9b0h (567728) map[0m
+[0;32mI (336) esp_image: segment 3: paddr=000ba9d8 vaddr=3ffb4534 size=00024h (    36) load[0m
+[0;32mI (336) esp_image: segment 4: paddr=000baa04 vaddr=40080000 size=159d4h ( 88532) load[0m
+[0;32mI (376) esp_image: segment 5: paddr=000d03e0 vaddr=50000000 size=00028h (    40) load[0m
+[0;32mI (387) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (387) boot: Disabling RNG early entropy source...[0m
+[0;32mI (398) cpu_start: Multicore app[0m
+[0;32mI (406) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (406) cpu_start: Pro cpu start user code[0m
+[0;32mI (407) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (408) app_init: Application information:[0m
+[0;32mI (412) app_init: Project name:     picklesense_esp32[0m
+[0;32mI (417) app_init: App version:      1[0m
+[0;32mI (420) app_init: Compile time:     Nov  2 2026 19:12:03[0m
+[0;32mI (425) app_init: ELF file SHA256:  39b0b56e6...[0m
+[0;32mI (430) app_init: ESP-IDF:          v6.0.1[0m
+[0;32mI (434) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (437) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (441) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (445) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (452) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (457) heap_init: At 3FFB89E0 len 00027620 (157 KiB): DRAM[0m
+[0;32mI (462) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (467) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (473) heap_init: At 400959D4 len 0000A62C (41 KiB): IRAM[0m
+[0;33mW (479) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (491) spi_flash: detected chip: generic[0m
+[0;32mI (495) spi_flash: flash io: dio[0m
+[0;33mW (498) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (512) main_task: Started on CPU0[0m
+[0;32mI (522) main_task: Calling app_main()[0m
+[0;32mI (522) PICKLESENSE: Starting PickleSense[0m
+[0;32mI (522) PICKLESENSE: Initializing MPU6050...[0m
+[0;32mI (522) MPU6050: Initializing I2C[0m
+[0;32mI (522) MPU6050: Checking MPU6050 at address 0x68[0m
+[0;32mI (532) MPU6050: WHO_AM_I = 0x68[0m
+[0;32mI (642) MPU6050: ACCEL_CONFIG = 0x00[0m
+[0;32mI (642) MPU6050: MPU6050 initialized successfully[0m
+[0;32mI (642) PICKLESENSE: Connecting to Wi-Fi...[0m
+[0;32mI (682) wifi:wifi driver task: 3ffc0978, prio:23, stack:6656, core=0[0m
+[0;32mI (692) wifi:wifi firmware version: b37c951[0m
+[0;32mI (692) wifi:wifi certification version: v7.0[0m
+[0;32mI (692) wifi:config NVS flash: enabled[0m
+[0;32mI (692) wifi:config nano formatting: disabled[0m
+[0;32mI (702) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (702) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (702) wifi:Init management short buffer num: 32[0m
+[0;32mI (712) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (712) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (722) wifi:Init static rx buffer num: 10[0m
+[0;32mI (722) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (732) wifi_init: rx ba win: 6[0m
+[0;32mI (732) wifi_init: accept mbox: 6[0m
+[0;32mI (732) wifi_init: tcpip mbox: 32[0m
+[0;32mI (732) wifi_init: udp mbox: 6[0m
+[0;32mI (742) wifi_init: tcp mbox: 6[0m
+[0;32mI (742) wifi_init: tcp tx win: 5760[0m
+[0;32mI (742) wifi_init: tcp rx win: 5760[0m
+[0;32mI (752) wifi_init: tcp mss: 1440[0m
+[0;32mI (752) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (752) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (762) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (832) wifi:mode : sta (68:09:47:9f:26:f0)[0m
+[0;32mI (832) wifi:enable tsf[0m
+[0;32mI (842) WIFI_MANAGER: Connecting to SSID: PisoWifi[0m
+[0;32mI (842) WIFI_MANAGER: Wi-Fi station started[0m
+[0;32mI (852) wifi:new:<6,2>, old:<1,0>, ap:<255,255>, sta:<6,2>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (852) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (892) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (902) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (912) wifi:<ba-add>idx:0 (ifx:0, 84:06:fa:ea:1e:e0), tid:0, ssn:0, winSize:64[0m
+[0;32mI (932) wifi:connected with PisoWifi, aid = 8, channel 6, 40D, bssid = 84:06:fa:ea:1e:e0[0m
+[0;32mI (932) wifi:security: WPA2-PSK, phy: bgn, rssi: -75, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (942) wifi:pm start, type: 1[0m
+
+[0;32mI (942) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (942) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1982) esp_netif_handlers: sta ip: 192.168.1.16, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (1982) WIFI_MANAGER: Wi-Fi connected[0m
+[0;32mI (1982) WIFI_MANAGER: ESP32 IP address: 192.168.1.16[0m
+[0;32mI (1982) WIFI_MANAGER: Network connection ready[0m
+[0;32mI (1992) PICKLESENSE: Initializing UDP sender...[0m
+[0;32mI (1992) UDP_SENDER: UDP sender initialized[0m
+[0;32mI (1992) UDP_SENDER: Destination: 192.168.1.10:5005[0m
+
+sequence,timestamp_us,ax_raw,ay_raw,az_raw,gx_raw,gy_raw,gz_raw
+[0;32mI (2002) PICKLESENSE: Acquisition started at 100 Hz[0m
+0,1537122,5528,-6952,-19876,53,-27,-18
+1,1544717,5588,-6884,-19796,46,-32,-7
+2,1548310,5588,-6884,-19796,46,-32,-7
+3,1553439,5472,-6980,-19976,19,-48,9
+[0;33mW (2032) UDP_SENDER: UDP send failed[0m
+[0;33mW (2032) PICKLESENSE: UDP transmission failed[0m
+4,1563439,5514,-6964,-20056,1,-67,7
+[0;33mW (2042) UDP_SENDER: UDP send failed[0m
+[0;33mW (2042) PICKLESENSE: UDP transmission failed[0m
+5,1573439,5430,-7000,-20200,-6,-68,9
+[0;33mW (2052) UDP_SENDER: UDP send failed[0m
+[0;33mW (2052) PICKLESENSE: UDP transmission failed[0m
+6,1583439,5362,-7064,-20300,8,-62,15
+[0;33mW (2062) UDP_SENDER: UDP send failed[0m
+[0;33mW (2062) PICKLESENSE: UDP transmission failed[0m
+7,1594024,5442,-6974,-20196,28,-48,-7
+8,1603439,5344,-6986,-19994,52,-33,-2
+9,1613439,5392,-7098,-19980,69,-28,-6
+10,1623439,5500,-7240,-20198,75,-25,-15
+11,1633439,5592,-7276,-20210,79,-18,-12
+12,1643439,5644,-7240,-20078,76,-15,-13
+13,1653439,5574,-7206,-19926,52,-28,0
+14,1663439,5532,-7072,-19930,18,-53,-2
+15,1673439,5562,-7038,-19888,-17,-67,3
+16,1683439,5408,-7058,-19954,-39,-83,23
+17,1693439,5488,-7094,-20176,-31,-86,7
+18,1703439,5408,-6968,-20168,1,-69,5
+19,1713439,5386,-6992,-20166,43,-40,1
+20,1723439,5412,-7094,-20106,90,-11,-14
+21,1733439,5546,-7120,-19992,111,-1,-19
+22,1743658,5532,-7232,-20042,88,-15,-11
+23,1753466,5524,-7254,-19978,45,-41,4
+24,1763439,5572,-7278,-19916,-4,-63,0
+25,1773439,5480,-7220,-19996,-35,-77,9
+26,1783439,5418,-7158,-19774,-37,-82,9
+27,1793439,5450,-7080,-19882,-19,-75,-1
+28,1803439,5410,-7112,-20268,16,-59,0
+29,1813439,5480,-7180,-20234,62,-32,-12
+30,1823439,5498,-7112,-20106,96,-5,-24
+31,1833439,5496,-7104,-19982,96,-4,-12
+32,1843439,5498,-7094,-19852,59,-22,-3
+33,1853439,5550,-7000,-19874,9,-49,-4
+34,1863439,5554,-7138,-19930,-21,-71,10
+35,1873439,5590,-7232,-20118,-24,-75,8
+36,1883439,5638,-7250,-20136,4,-59,-3
+37,1893439,5542,-7300,-20072,47,-35,-1
+38,1903439,5508,-7296,-19960,75,-21,-13
+39,1913439,5510,-7230,-19950,73,-19,-11
+40,1923460,5460,-7184,-19988,48,-34,0
+41,1933439,5502,-7214,-19978,6,-56,2
+42,1943439,5484,-7160,-20068,-27,-74,2
+43,1953439,5490,-7126,-20148,-42,-83,5
+44,1963439,5504,-7150,-20112,-39,-83,0
+45,1973439,5490,-7186,-19908,-12,-65,-8
+46,1983439,5496,-7228,-20176,20,-49,-10
+47,1993439,5580,-7230,-19844,47,-33,-15
+48,2003439,5786,-7876,-20844,37,-36,-3
+49,2013439,5556,-6778,-18968,32,-40,-24
+50,2023439,5494,-7576,-20558,-45,-86,46
+51,2033439,5660,-6854,-19842,-66,-95,-16
+52,2043439,5328,-7258,-20024,-69,-80,38
+53,2053439,5472,-7150,-20242,-47,-108,11
+54,2063439,5618,-7100,-20256,-44,-70,-19
+55,2073439,5284,-7238,-20394,-12,-68,29
+56,2083439,5492,-7382,-20452,-4,-64,-12
+57,2094206,5600,-6886,-19384,-7,-42,-41
+58,2103439,5440,-7202,-20154,-22,-52,30
+59,2113439,5586,-7398,-19810,-26,-59,-14
+60,2123439,5442,-7150,-19812,-34,-111,2
+61,2133439,5728,-7218,-20674,-41,-66,-22
+62,2143439,5542,-7402,-20206,-26,-63,14
+63,2153439,5316,-6696,-19206,-23,-44,-8
+64,2163439,5242,-6948,-20096,-80,-125,6
+65,2173439,5360,-7114,-19884,-68,-107,17
+66,2184358,5310,-6944,-20488,-78,-82,9
+67,2193439,5358,-7332,-20198,47,-43,11
+68,2203467,5612,-7014,-20336,105,-5,-52
+69,2213439,5514,-6874,-19982,120,20,-10
