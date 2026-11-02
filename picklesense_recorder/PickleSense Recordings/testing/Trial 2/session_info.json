@@ -1,0 +1,12 @@
+{
+    "session_id": "50170c62-16b4-40fe-80f6-74f4641a8251",
+    "movement_name": "testing",
+    "trial_name": "Trial 2",
+    "record_start_ns": 39351176087500,
+    "record_stop_ns": 39361611718600,
+    "imu_samples": 1044,
+    "pose_frames": 105,
+    "created_at": "2026-11-03T01:00:52.550930",
+    "imu_file": "imu_data.csv",
+    "pose_file": "pose_data.csv"
+}
